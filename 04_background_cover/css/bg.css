@@ -1,0 +1,26 @@
+/*
+body {
+    background-image: url("../images/bg1.png");
+    background-repeat: repeat-x;
+}
+*/
+
+body {
+    background: url("../images/bgfox.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+h1 {
+    color: #0CE0D4;
+    text-align: center;
+    border: 3px solid black;
+    
+    width: 500px;
+    padding: 20px;
+    margin: 0 auto;
+    font-family: 'Shrikhand', cursive;
+}
+
+i {
+    color: red;
+}
