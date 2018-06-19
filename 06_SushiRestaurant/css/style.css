@@ -31,8 +31,9 @@ div {
 
 h1 {
     margin-bottom: 25px;
-    color: rgb(39, 39, 39);
+    color: #00ff80;
     font-size: 44px;
+    background-color: #ffff99;
 }
 
 p {
