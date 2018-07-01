@@ -1,0 +1,26 @@
+html {
+    height: 100%;
+}
+
+body {
+    background: url('https://images.unsplash.com/photo-1502945015378-0e284ca1a5be?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b934f71d8055c9013853b2fe286d66f0&dpr=1&auto=format&fit=crop&w=1000&q=80&cs=tinysrgb');
+    background-size: cover;
+    background-position: center;
+}
+
+.center {
+    text-align: center;
+    padding-top: 15%;
+}
+
+h1, p {
+    color: deeppink;
+}
+
+.grey-color {
+    color: darkgrey;
+}
+
+.twitter-color {
+    color:deepskyblue;
+}
