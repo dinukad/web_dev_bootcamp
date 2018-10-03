@@ -11,7 +11,7 @@ body {
 }
 
 h1 {
-    color: #0CE0D4;
+    color: yellowgreen;
     text-align: center;
     border: 3px solid black;
     
@@ -22,5 +22,5 @@ h1 {
 }
 
 i {
-    color: red;
+    color: white;
 }
