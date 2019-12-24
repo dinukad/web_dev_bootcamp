@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>01_Album</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/lightbox.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top" class="index">
+
+
+<!-- Projects Grid Section -->
+<section id="portfolio" class="bg-light-gray">
+    <div class="container">
+
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+
+                <div class="mySlides">
+                    <div class="numbertext">1 / 4</div>
+                    <img src="img_1/nature_wide.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">2 / 4</div>
+                    <img src="img_1/nature_wide_1.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">3 / 4</div>
+                    <img src="img_1/nature_wide_2.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">4 / 4</div>
+                    <img src="img_1/nature_wide_3.jpg" style="width:100%">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+
+
+                <div class="imageColumn">
+                    <img class="demo cursor" src="img_1/nature_wide.jpg" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
+                </div>
+                <div class="imageColumn">
+                    <img class="demo cursor" src="img_1/nature_wide_1.jpg" style="width:100%" onclick="currentSlide(2)" alt="Nature and sunrise 2">
+                </div>
+                <div class="imageColumn">
+                    <img class="demo cursor" src="img_1/nature_wide_2.jpg" style="width:100%" onclick="currentSlide(3)" alt="Nature and sunrise 3">
+                </div>
+                <div class="imageColumn">
+                    <img class="demo cursor" src="img_1/nature_wide_3.jpg" style="width:100%" onclick="currentSlide(4)" alt="Nature and sunrise 4">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Bootstrap Core JavaScript -->
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+<script>
+
+    var slideIndex = 1;
+    document.getElementById("myModal").style.display = "block";
+
+
+    function closeModal() {
+        window.close();
+    }
+
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+</script>
+
+</body>
+
+</html>
