@@ -755,3 +755,7 @@ body {
 .orange-color{
   color: #f63
 }
+
+.break-word {
+  word-wrap: break-word;
+}
